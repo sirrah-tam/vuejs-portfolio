@@ -62,7 +62,6 @@
 }
 
 .profile {
-	display: none;
 	padding: 15px 0;
 
 	h4 {
@@ -125,7 +124,7 @@
 		box-shadow: 0px 1px 1px rgba(17, 17, 17, 0.25);
 		transition: all ease .3s;
 
-		@media screen and (min-width: $screen-sm) {
+		@include media-breakpoint-up(md) {
 			height: 120px;
 			width: auto;
 		}
@@ -154,7 +153,7 @@
 		display: block;
 		margin: 15px 0;
 		font-size: 1.25rem;
-		color: $primary_color;
+		color: theme-color('primary');
 
 		&:hover,
 		&:focus {
@@ -196,7 +195,7 @@
 .cdschool {
 	h4 {
 		a {
-			color: $primary_color;
+			color: theme-color('primary');
 
 			&:hover,
 			&:focus {

@@ -1,37 +1,27 @@
 <template>
-    <header>
-		<nav class="navbar navbar-inverse navbar-static-top">
+    <header class="sticky-top">
+		<nav class="navbar navbar-dark bg-dark">
 			<div class="container">
-				<div class="navbar-header">
-					<a href="index.html" class="navbar-brand">
-						{{ siteName }}
-					</a>
-					<div class="collapse navbar-collapse pull-right" id="main-nav">
-						<ul class="nav navbar-nav">
-							<li><a href="#about">About</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#profilesTTH">Profiles</a></li>
-						</ul>
-					</div>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
+                <a href="/" class="navbar-brand">{{ info.siteName }}</a>
+                <main-nav :links="links"></main-nav>
 			</div>
 		</nav>
 	</header>
 </template>
 
 <script>
+    import Nav from './Nav.vue'
+
     export default {
         name: 'page-header',
-        data () {
-            return {
-                siteName: 'Sirrah Tam | Mat Harris'
-            }
+
+        props: {
+            links: Array,
+            info: Object
+        },
+
+        components: {
+            'main-nav': Nav
         }
     }
 </script>

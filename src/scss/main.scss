@@ -1,4 +1,8 @@
-@import "./vendor/font-awesome/scss/font-awesome";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "../static/fonts";
+@import "vendor/font-awesome/font-awesome";
+
 @import "variables";
 @import "base";
 @import "layout";

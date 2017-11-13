@@ -1,29 +1,37 @@
 <template>
-<div id="app">
-	<page-header></page-header>
-	<img src="./assets/logo.png">
-	<router-view/>
-</div>
+	<div id="app">
+
+		<page-header :links="config.links" :info="config.info"></page-header>
+
+		<intro :info="config.info"></intro>
+
+		<router-view id="test"/>
+
+		<page-footer :contact="config.info.contact"></page-footer>
+	</div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Footer from './components/Footer'
+import Intro from './components/Intro'
+import data from '../static/data.json'
 
 export default {
 	name: 'app',
 	components: {
-		'page-header': Header
+		'page-header': Header,
+		'page-footer': Footer,
+		'intro': Intro
+	},
+	data () {
+		return {
+			config: data.config
+		}
 	}
 }
 </script>
 
-<style>
-#app {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
-}
+<style lang="scss">
+	@import './scss/main';
 </style>

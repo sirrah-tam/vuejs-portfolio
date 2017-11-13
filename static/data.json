@@ -1,0 +1,129 @@
+{
+    "config": {
+        "info": {
+            "siteName": "Sirrah Tam | Mat Harris",
+            "about": "About me this is a paragraph",
+            "headline": "Mat Harris | Web Developer",
+            "gravatar": "https://www.gravatar.com/avatar/6346dcbd2067cc872dc03286a69612fb?s=350",
+            "contact": [
+                {
+                    "type": "Email",
+                    "link": "mailto:matharris@sirrahtam.com",
+                    "display": "matharris@sirrahtam.com",
+                    "icon": "fa-envelope"
+                },
+                {
+                    "type": "Twitter",
+                    "link": "https://twitter.com/sirrah_tam",
+                    "display": "@sirrah_tam",
+                    "icon": "fa-twitter"
+                },
+                {
+                    "type": "Github",
+                    "link": "https://github.com/sirrah-tam",
+                    "display": "https://github.com/sirrah-tam",
+                    "icon": "fa-github"
+                }
+            ]
+        },
+        "links": [
+            {
+                "name": "About",
+                "link": "/about"
+            },
+            {
+                "name": "Projects",
+                "link": "/projects"
+            },
+            {
+                "name": "Profiles",
+                "link": "/profiles"
+            }
+        ],
+        "projects": [
+            {
+                "name": "Comor Sports",
+                "link": "https://comorsports.com/",
+                "image": "../static/images/comor.jpg"
+            },
+            {
+                "name": "Pacific Boarder",
+                "link": "https://pacificboarder.com/",
+                "image": "../static/images/pb.jpg"
+            },
+            {
+                "name": "Epic Voyage",
+                "link": "https://epicvoyage.com/",
+                "image": "../static/images/epic-voyage.png"
+            },
+            {
+                "name": "Culinex",
+                "link": "https://culinex.biz/",
+                "image": "../static/images/culinex.png"
+            },
+            {
+                "name": "NW Signs",
+                "link": "https://nwsigns.com/",
+                "image": "../static/images/nw-signs.png"
+            },
+            {
+                "name": "SEAPAC Homes",
+                "link": "https://seapachomes.com/",
+                "image": "../static/images/seapac-homes.png"
+            },
+            {
+                "name": "Prestige Care",
+                "link": "https://prestigecare.com/",
+                "image": "../static/images/prestige-care.png"
+            },
+            {
+                "name": "McCaffrey Associates",
+                "link": "http://www.mccaffreyassociates.com/",
+                "image": "../static/images/mccaffrey-associates.png"
+            },
+            {
+                "name": "PSET Insurance",
+                "link": "https://psetinsurance.com",
+                "image": "../static/images/pset-insurance.png"
+            },
+            {
+                "name": "Tree of Life Accupuncture",
+                "link": "https://treeoflife-acupuncture.com",
+                "image": "../static/images/treeoflife-acupuncture.png"
+            },
+            {
+                "name": "Janof Architecture",
+                "link": "http://www.janofarchitecture.com/",
+                "image": "../static/images/janof-architecture.png"
+            }
+        ],
+        "profiles": [
+            {
+                "name": "Team Treehouse",
+                "handle": "teamtreehouse",
+                "api": {
+                    "url": "https://teamtreehouse.com/matharris.json",
+                    "type": "GET",
+                    "async": true
+                },
+                "link": "https://teamtreehouse.com/matharris",
+                "link_text": "See more at Team Treehouse >>",
+                "logo": "../static/images/tth-logo.png"
+            },
+            {
+                "name": "CodeSchool",
+                "handle": "codeschool",
+                "api": {
+                    "url": "https://www.codeschool.com/users/sirrah_tam.json",
+                    "type": "GET",
+                    "async": true,
+                    "contentType": "application/json",
+                    "dataType": "jsonp"
+                },
+                "link": "https://www.codeschool.com/users/sirrah_tam",
+                "link_text": "See my full report card at Code School >>",
+                "logo": "../static/images/codeschool-logo.png"
+            }
+        ]
+    }
+}
