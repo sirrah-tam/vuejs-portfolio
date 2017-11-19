@@ -20,7 +20,7 @@
                                 </div>
                             </div>
     					</div>
-    					<div :id="profile.handle + '-collapse'" class="row profile panel-collapse collapse" role="tabpanel" :aria-labelledby="profile.handle + '__heading'">
+    					<div :id="profile.handle + '-collapse'" class="panel-collapse collapse" role="tabpanel" :aria-labelledby="profile.handle + '__heading'">
     						<profile :account="profile.handle" :api="profile.api"></profile>
     					</div>
     				</div>

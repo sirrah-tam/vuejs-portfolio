@@ -44,12 +44,17 @@
             {
                 "name": "Comor Sports",
                 "link": "https://comorsports.com/",
-                "image": "../static/images/comor.jpg"
+                "image": "../static/images/comor.png"
             },
             {
                 "name": "Pacific Boarder",
                 "link": "https://pacificboarder.com/",
-                "image": "../static/images/pb.jpg"
+                "image": "../static/images/pb.png"
+            },
+            {
+                "name": "Inmedix",
+                "link": "https://inmedix.com/",
+                "image": "../static/images/inmedix.png"
             },
             {
                 "name": "Epic Voyage",
